@@ -1,0 +1,34 @@
+CREATE DATABASE Booking;
+
+use Booking;
+
+create table TicketBooking(PRN_No varchar(50) NOT NULL PRIMARY KEY,Travel_Date varchar(50),Source_Airport varchar(50) ,Destination_Airport varchar(50), Status varchar(50),Seat_Preference varchar(50),Meal_Preference varchar(50));
+
+select * from TicketBooking;
+
+Insert into TicketBooking values ('1324','12/02/21','Pune','Mumbai','Success','Window','veg',1);
+Insert into TicketBooking values ('256','13/02/21','Kolkata','Mumbai','Success','Window','Non veg',2);
+Insert into TicketBooking values ('14','15/02/21','Hyderabad','Pune','Failed','Middle','veg',3);
+Insert into TicketBooking values ('99','2/03/21','Kochi','Mumbai','Success','Window','veg',4);
+Insert into TicketBooking values ('987','22/02/21','Mumbai','Pune','Success','Window','veg',5);
+Insert into TicketBooking values ('886','12/06/21','Pune','Bhubneshwar','Success','Window','Nonveg',1);
+Insert into TicketBooking values ('132','29/02/21','Pune','Banglore','Success','Window','Nonveg',2);
+Insert into TicketBooking values ('163','16/03/21','Banglore','Mumbai','Success','Window','veg',1);
+Insert into TicketBooking values ('132455','28/05/21','Pune','Chennai','Success','Window','veg',5);
+Insert into TicketBooking values ('132456','27/05/21','Delhi','Chennai','Success','Window','veg',6);
+
+
+Delete From TicketBooking;
+
+create table Passenger_Registration(Passenger_Id int NOT NULL PRIMARY KEY,Passenger_Name varchar(50),Age int,Email varchar(50), Phone varchar(15));
+
+Insert into Passenger_Registration values ('1','Chaitanya',23,'chaitanya.samal@gmail.com',7020460315);
+Insert into Passenger_Registration values ('2','Darshan',24,'Dk@gmail.com',9520460315);
+Insert into Passenger_Registration values ('3','Venkat',25,'venkat@gmail.com',6320460315);
+Insert into Passenger_Registration values ('4','Sai',22,'saip@gmail.com',9920460315);
+Insert into Passenger_Registration values ('5','Onkar',20,'onkdubas@gmail.com',8520460315);
+
+select * from  Passenger_Registration;
+
+ALTER TABLE TicketBooking
+ADD Passenger_Id int;

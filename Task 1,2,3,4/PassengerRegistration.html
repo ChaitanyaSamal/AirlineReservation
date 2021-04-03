@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Passenger Registration Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<script type = "text/javascript" src = "vali.js"></script>
+
+</head>
+
+<body>
+<h1>ABC<span>Airline</span></h1>
+
+<div class="square">
+
+<h2 >Passenger Registration Form</h2>	
+ <p align="center">Please fill in this form to Register</p>
+<form action = "PassengerRegistered.html" method="post" name="PassengerRegistration" onsubmit="return validate()">	
+<table  cellpadding = "10">
+
+<tr>
+<td>Passenger Id</td>
+<td>
+<input class="form-control" type="text" placeholder="1001" aria-label="Disabled input example" disabled name="Passenger_Id" size= "35"/></td>
+</tr>
+
+<tr>
+<td>Passenger Name</td>
+<td><input type="text" class="form-control" placeholder="Full name" name="Full_Name"  size= "50"/></td>
+</tr>
+		
+<tr>
+<td>Email</td>
+<td><input type="email" class="form-control"  placeholder="Enter Email" name="Email_Id" size = "35"/></td>        
+</tr>
+	
+<tr>
+<td>Password</td>
+<td><input type="password" class="form-control" placeholder="Enter Password " name="Password" size= "30"/></td>
+</tr>
+
+<tr>
+<td>Address
+<br />
+<br />
+<br /></td>
+<td><textarea name="Address" class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Address" rows="4" ></textarea></td>
+</tr>
+	
+<tr>
+<td>Contact Number</td>
+<td><input type="number" class="form-control" name="Contact_Number" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+		
+<tr>
+<td colspan="2" align="center">
+		<button type="submit" class="btn btn-danger">Register</button>
+		<button type="reset" class="btn btn-danger">Reset</button>
+</td>
+</tr>
+</table>
+	
+</form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>	
